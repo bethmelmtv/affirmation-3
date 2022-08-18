@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { getAffirmation } from './services/fetch-utils';
+// import { getAffirmation } from './services/fetch-utils';
 
 function App() {
   async function handleSubmit() {
