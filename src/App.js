@@ -3,23 +3,16 @@ import './App.css';
 import { getAffirmation } from './services/fetch-utils';
 
 function App() {
-
-async function handleChange() {
-  console.log('You clicked submit')
+  async function handleSubmit() {
     const response = await getAffirmation();
+    console.log('response', response);
     return response;
-}
+  }
   return (
     <div className="App">
-      <div>
-//       <button onClick={handleChange} >Get Affirmation </button>
-//     </div>
+      <button onClick={handleSubmit}>Get Affirmation</button>
     </div>
   );
 }
 
 export default App;
-
-
-
-
